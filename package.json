@@ -1,7 +1,7 @@
 {
   "name": "dependency-track-checker",
   "version": "1.0.0",
-  "description": "Check Dependency Track project for findings or policy violations",
+  "description": "Checks OWASP Dependency-Track scan results, adds findings to PR comments, and fails workflows based on thresholds",
   "main": "src/index.js",
   "scripts": {
     "build": "ncc build src/index.js -o dist",

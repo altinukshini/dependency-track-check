@@ -1,5 +1,5 @@
 name: 'OWASP Dependecy-Track Checker'
-description: 'Checks Dependency-Track results, publishes BOMs to Dependency-Track, adds results to PR comments, fails workflow on thresholds, retrieves project risk score'
+description: 'Checks OWASP Dependency-Track scan results, adds findings to PR comments, and fails workflows based on thresholds'
 inputs:
   api_key:
     description: 'Dependency-Track API Key'
