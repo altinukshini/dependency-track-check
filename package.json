@@ -1,5 +1,5 @@
 {
-  "name": "dependency-track-check",
+  "name": "dependency-track-checker",
   "version": "1.0.0",
   "description": "Check Dependency Track project for findings or policy violations",
   "main": "src/index.js",
@@ -19,7 +19,7 @@
     "node-fetch": "^2.6.7"
   },
   "devDependencies": {
-    "@vercel/ncc": "0.38.0",
+    "@vercel/ncc": "0.38.3",
     "eslint": "8.50.0",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.28.1",

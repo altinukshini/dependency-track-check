@@ -1,7 +1,7 @@
 # OWASP Dependency-Track Checker GitHub Action
 
-[![GitHub release](https://img.shields.io/github/release/altinukshini/dependency-track-check.svg)](https://github.com/altinukshini/dependency-track-check/releases)
-[![License](https://img.shields.io/github/license/altinukshini/dependency-track-check.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/release/altinukshini/dependency-track-checker.svg)](https://github.com/altinukshini/dependency-track-checker/releases)
+[![License](https://img.shields.io/github/license/altinukshini/dependency-track-checker.svg)](LICENSE)
 
 A GitHub Action to check [OWASP Dependency-Track](https://dependencytrack.org/) scan results for a project and optionally fail the workflow based on policy violations or risk score thresholds.
 
@@ -20,7 +20,7 @@ This action connects to a Dependency-Track instance, checks the processing statu
 ```yaml
       # Check Dependency-Track results
       - name: Check Dependency-Track Results
-        uses: altinukshini/dependency-track-check@v1
+        uses: altinukshini/dependency-track-checker@v1
         with:
           api_key: ${{ secrets.DEPENDENCY_TRACK_API_KEY }}
           api_url: ${{ secrets.DEPENDENCY_TRACK_URL }}
