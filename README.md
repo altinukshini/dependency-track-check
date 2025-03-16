@@ -1,4 +1,4 @@
-# Dependency-Track Check GitHub Action
+# OWASP Dependency-Track Checker GitHub Action
 
 [![GitHub release](https://img.shields.io/github/release/altinukshini/dependency-track-check.svg)](https://github.com/altinukshini/dependency-track-check/releases)
 [![License](https://img.shields.io/github/license/altinukshini/dependency-track-check.svg)](LICENSE)
