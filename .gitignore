@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+.env.test
+
+# IDE files
+.idea
+.vscode
+
+# Workflow files
+workflow
+test-output.md
+
+# Temporary files
+*.tmp
+temp/

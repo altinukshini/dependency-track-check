@@ -1,0 +1,67 @@
+name: 'Dependecy-Track Check'
+description: 'Check Dependency-Track scan results for a certain project'
+inputs:
+  api_key:
+    description: 'Dependency-Track API Key'
+    required: true
+  api_url:
+    description: 'Dependency-Track API URL'
+    required: true
+  project_name:
+    description: 'Dependency-Track Project Name'
+    required: true
+  project_version:
+    description: 'Dependency-Track Project Version'
+    required: true
+  sbom_token:
+    description: 'Token response from Dependency Track of the uploaded SBOM file'
+    required: true
+  print_github_summary:
+    description: 'Prints a summary of the Dependency-Track scan results to the GitHub Actions job summary'
+    required: false
+    default: 'true'
+  comment_results_in_pr:
+    description: 'Comment the Dependency-Track scan results in the PR'
+    required: false
+    default: 'true'
+  fail_on_policy_violation:
+    description: 'Fail the job if a policy violation with FAIL state is found'
+    required: false
+    default: 'true'
+  project_risk_score_threshold:
+    description: 'Fail the job if the project risk score is above this threshold'
+    required: false
+    default: '-1'
+  gh_token:
+    description: 'GitHub Token used for PR Comment'
+    required: false
+  owner:
+    description: GitHub Owner. Default current repo owner
+    required: false
+  repo:
+    description: GitHub Repo. Default current repo
+    required: false
+  pr_number:
+    description: GitHub PR Number. Default current PR
+    required: false
+
+outputs:
+  project_uuid:
+    description: 'The UUID of the project in Dependency-Track'
+  project_risk_score:
+    description: 'The risk score of the project in Dependency-Track'
+  security_score_category:
+    description: 'The security score category of the project in Dependency-Track'
+  total_policy_violations:
+    description: 'The total number of policy violations in the project'
+  fail_policy_violations:
+    description: 'The number of policy violations with FAIL state in the project'
+  warn_policy_violations:
+    description: 'The number of policy violations with WARN state in the project'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+branding:
+  icon: alert-circle
+  color: red
