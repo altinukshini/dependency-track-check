@@ -98,10 +98,6 @@ The action can fail the workflow based on two configurable conditions:
 
 2. **Risk Score Threshold**: When `project_risk_score_threshold` is set to a value greater than -1, the workflow will fail if the project risk score exceeds this threshold.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
